@@ -1,0 +1,25 @@
+datasource db {
+    provider = "mysql"
+    url      = env("PRISMA_PY_MYSQL_URL")
+}
+
+generator client {
+    provider                    = "coverage run -m prisma"
+    interface                   = "asyncio"
+    recursive_type_depth        = -1
+    engineType                  = "binary"
+    enable_experimental_decimal = true
+}
+
+model County {
+    fips     Int      @id
+    name     String
+    agencies Agency[]
+}
+
+model Agency {
+    id          Int    @id @default(autoincrement())
+    name        String
+    county      County @relation(fields: [county_fips], references: [fips])
+    county_fips Int
+}

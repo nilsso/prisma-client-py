@@ -277,9 +277,9 @@ class GenericData(GenericModel, Generic[ConfigT]):
     dmmf: 'DMMF' = FieldInfo(alias='dmmf')
     schema_path: str = FieldInfo(alias='schemaPath')
     datasources: List['Datasource'] = FieldInfo(alias='datasources')
-
-    # TODO
-    other_generators: List[Any] = FieldInfo(alias='otherGenerators')
+    other_generators: List['Generator[_ModelAllowAll]'] = FieldInfo(
+        alias='otherGenerators'
+    )
 
     @classmethod
     def parse_obj(cls, obj: Any) -> 'GenericData[ConfigT]':
@@ -787,6 +787,8 @@ class Field(BaseModel):
             return f"'types.{typ}ListFilter'"
 
         if typ in FILTER_TYPES:
+            if self.is_optional:
+                return f"Union[None, {self._actual_python_type}, 'types.{typ}Filter']"
             return f"Union[{self._actual_python_type}, 'types.{typ}Filter']"
 
         return self.python_type
@@ -933,6 +935,11 @@ class DefaultValue(BaseModel):
 class _EmptyModel(BaseModel):
     class Config(BaseModel.Config):
         extra: Extra = Extra.forbid
+
+
+class _ModelAllowAll(BaseModel):
+    class Config(BaseModel.Config):
+        extra: Extra = Extra.allow
 
 
 class PythonData(GenericData[Config]):

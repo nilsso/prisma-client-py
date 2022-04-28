@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "prisma-client-py"
+name = "prisma"
 version = "0.6.5a"
 description = "Prisma Client Python is an auto-generated and fully type-safe database client"
 authors=["Robert Craigie <robert@craigie.dev>"]

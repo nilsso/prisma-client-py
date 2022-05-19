@@ -1,5 +1,4 @@
 # https://github.com/github/gitignore/blob/master/Python.gitignore
-
 __pycache__/
 *.py[cod]
 *$py.class
@@ -98,6 +97,10 @@ ipython_config.py
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
 #Pipfile.lock
+
+# poetry
+pyproject.toml
+poetry.lock
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/

@@ -49,7 +49,7 @@ from .utils import _NoneType
 {% elif type.kind == 'union' %}
 {{ type.name }} = Union[
     {% for subtype in type.subtypes %}
-    '{{ subtype.name }}',
+    {{ subtype.name }},
     {% endfor %}
 ]
 {% elif type.kind == 'typeddict' %}

@@ -1129,12 +1129,12 @@ _Post_author_id_OrderByInput = TypedDict(
 )
 
 PostOrderByInput = Union[
-    '_Post_id_OrderByInput',
-    '_Post_created_at_OrderByInput',
-    '_Post_title_OrderByInput',
-    '_Post_content_OrderByInput',
-    '_Post_published_OrderByInput',
-    '_Post_author_id_OrderByInput',
+    _Post_id_OrderByInput,
+    _Post_created_at_OrderByInput,
+    _Post_title_OrderByInput,
+    _Post_content_OrderByInput,
+    _Post_published_OrderByInput,
+    _Post_author_id_OrderByInput,
 ]
 
 
@@ -2169,8 +2169,8 @@ _UserWhereUnique_email_Input = TypedDict(
 )
 
 UserWhereUniqueInput = Union[
-    '_UserWhereUnique_id_Input',
-    '_UserWhereUnique_email_Input',
+    _UserWhereUnique_id_Input,
+    _UserWhereUnique_email_Input,
 ]
 
 
@@ -2336,18 +2336,18 @@ _User_optional_boolean_OrderByInput = TypedDict(
 )
 
 UserOrderByInput = Union[
-    '_User_id_OrderByInput',
-    '_User_email_OrderByInput',
-    '_User_int_OrderByInput',
-    '_User_optional_int_OrderByInput',
-    '_User_float_OrderByInput',
-    '_User_optional_float_OrderByInput',
-    '_User_string_OrderByInput',
-    '_User_optional_string_OrderByInput',
-    '_User_enum_OrderByInput',
-    '_User_optional_enum_OrderByInput',
-    '_User_boolean_OrderByInput',
-    '_User_optional_boolean_OrderByInput',
+    _User_id_OrderByInput,
+    _User_email_OrderByInput,
+    _User_int_OrderByInput,
+    _User_optional_int_OrderByInput,
+    _User_float_OrderByInput,
+    _User_optional_float_OrderByInput,
+    _User_string_OrderByInput,
+    _User_optional_string_OrderByInput,
+    _User_enum_OrderByInput,
+    _User_optional_enum_OrderByInput,
+    _User_boolean_OrderByInput,
+    _User_optional_boolean_OrderByInput,
 ]
 
 
@@ -3619,17 +3619,17 @@ _M_optional_boolean_OrderByInput = TypedDict(
 )
 
 MOrderByInput = Union[
-    '_M_id_OrderByInput',
-    '_M_int_OrderByInput',
-    '_M_optional_int_OrderByInput',
-    '_M_float_OrderByInput',
-    '_M_optional_float_OrderByInput',
-    '_M_string_OrderByInput',
-    '_M_optional_string_OrderByInput',
-    '_M_enum_OrderByInput',
-    '_M_optional_enum_OrderByInput',
-    '_M_boolean_OrderByInput',
-    '_M_optional_boolean_OrderByInput',
+    _M_id_OrderByInput,
+    _M_int_OrderByInput,
+    _M_optional_int_OrderByInput,
+    _M_float_OrderByInput,
+    _M_optional_float_OrderByInput,
+    _M_string_OrderByInput,
+    _M_optional_string_OrderByInput,
+    _M_enum_OrderByInput,
+    _M_optional_enum_OrderByInput,
+    _M_boolean_OrderByInput,
+    _M_optional_boolean_OrderByInput,
 ]
 
 
@@ -4911,19 +4911,19 @@ _N_optional_boolean_OrderByInput = TypedDict(
 )
 
 NOrderByInput = Union[
-    '_N_id_OrderByInput',
-    '_N_int_OrderByInput',
-    '_N_optional_int_OrderByInput',
-    '_N_float_OrderByInput',
-    '_N_optional_float_OrderByInput',
-    '_N_string_OrderByInput',
-    '_N_optional_string_OrderByInput',
-    '_N_json__OrderByInput',
-    '_N_optional_json_OrderByInput',
-    '_N_enum_OrderByInput',
-    '_N_optional_enum_OrderByInput',
-    '_N_boolean_OrderByInput',
-    '_N_optional_boolean_OrderByInput',
+    _N_id_OrderByInput,
+    _N_int_OrderByInput,
+    _N_optional_int_OrderByInput,
+    _N_float_OrderByInput,
+    _N_optional_float_OrderByInput,
+    _N_string_OrderByInput,
+    _N_optional_string_OrderByInput,
+    _N_json__OrderByInput,
+    _N_optional_json_OrderByInput,
+    _N_enum_OrderByInput,
+    _N_optional_enum_OrderByInput,
+    _N_boolean_OrderByInput,
+    _N_optional_boolean_OrderByInput,
 ]
 
 
@@ -6209,17 +6209,17 @@ _OneOptional_optional_boolean_OrderByInput = TypedDict(
 )
 
 OneOptionalOrderByInput = Union[
-    '_OneOptional_id_OrderByInput',
-    '_OneOptional_int_OrderByInput',
-    '_OneOptional_optional_int_OrderByInput',
-    '_OneOptional_float_OrderByInput',
-    '_OneOptional_optional_float_OrderByInput',
-    '_OneOptional_string_OrderByInput',
-    '_OneOptional_optional_string_OrderByInput',
-    '_OneOptional_enum_OrderByInput',
-    '_OneOptional_optional_enum_OrderByInput',
-    '_OneOptional_boolean_OrderByInput',
-    '_OneOptional_optional_boolean_OrderByInput',
+    _OneOptional_id_OrderByInput,
+    _OneOptional_int_OrderByInput,
+    _OneOptional_optional_int_OrderByInput,
+    _OneOptional_float_OrderByInput,
+    _OneOptional_optional_float_OrderByInput,
+    _OneOptional_string_OrderByInput,
+    _OneOptional_optional_string_OrderByInput,
+    _OneOptional_enum_OrderByInput,
+    _OneOptional_optional_enum_OrderByInput,
+    _OneOptional_boolean_OrderByInput,
+    _OneOptional_optional_boolean_OrderByInput,
 ]
 
 
@@ -7487,18 +7487,18 @@ _ManyRequired_optional_boolean_OrderByInput = TypedDict(
 )
 
 ManyRequiredOrderByInput = Union[
-    '_ManyRequired_id_OrderByInput',
-    '_ManyRequired_one_optional_id_OrderByInput',
-    '_ManyRequired_int_OrderByInput',
-    '_ManyRequired_optional_int_OrderByInput',
-    '_ManyRequired_float_OrderByInput',
-    '_ManyRequired_optional_float_OrderByInput',
-    '_ManyRequired_string_OrderByInput',
-    '_ManyRequired_optional_string_OrderByInput',
-    '_ManyRequired_enum_OrderByInput',
-    '_ManyRequired_optional_enum_OrderByInput',
-    '_ManyRequired_boolean_OrderByInput',
-    '_ManyRequired_optional_boolean_OrderByInput',
+    _ManyRequired_id_OrderByInput,
+    _ManyRequired_one_optional_id_OrderByInput,
+    _ManyRequired_int_OrderByInput,
+    _ManyRequired_optional_int_OrderByInput,
+    _ManyRequired_float_OrderByInput,
+    _ManyRequired_optional_float_OrderByInput,
+    _ManyRequired_string_OrderByInput,
+    _ManyRequired_optional_string_OrderByInput,
+    _ManyRequired_enum_OrderByInput,
+    _ManyRequired_optional_enum_OrderByInput,
+    _ManyRequired_boolean_OrderByInput,
+    _ManyRequired_optional_boolean_OrderByInput,
 ]
 
 
@@ -8759,16 +8759,16 @@ _Lists_decimals_OrderByInput = TypedDict(
 )
 
 ListsOrderByInput = Union[
-    '_Lists_id_OrderByInput',
-    '_Lists_strings_OrderByInput',
-    '_Lists_bytes_OrderByInput',
-    '_Lists_dates_OrderByInput',
-    '_Lists_bools_OrderByInput',
-    '_Lists_ints_OrderByInput',
-    '_Lists_floats_OrderByInput',
-    '_Lists_bigints_OrderByInput',
-    '_Lists_json_objects_OrderByInput',
-    '_Lists_decimals_OrderByInput',
+    _Lists_id_OrderByInput,
+    _Lists_strings_OrderByInput,
+    _Lists_bytes_OrderByInput,
+    _Lists_dates_OrderByInput,
+    _Lists_bools_OrderByInput,
+    _Lists_ints_OrderByInput,
+    _Lists_floats_OrderByInput,
+    _Lists_bigints_OrderByInput,
+    _Lists_json_objects_OrderByInput,
+    _Lists_decimals_OrderByInput,
 ]
 
 
@@ -9861,8 +9861,8 @@ _ACompoundname_email_enumKey = TypedDict(
 )
 
 AWhereUniqueInput = Union[
-    '_AWhereUnique_email_Input',
-    '_ACompoundname_email_enumKey',
+    _AWhereUnique_email_Input,
+    _ACompoundname_email_enumKey,
 ]
 
 
@@ -9997,15 +9997,15 @@ _A_enum_OrderByInput = TypedDict(
 )
 
 AOrderByInput = Union[
-    '_A_email_OrderByInput',
-    '_A_name_OrderByInput',
-    '_A_int_OrderByInput',
-    '_A_sInt_OrderByInput',
-    '_A_inc_int_OrderByInput',
-    '_A_inc_sInt_OrderByInput',
-    '_A_bInt_OrderByInput',
-    '_A_inc_bInt_OrderByInput',
-    '_A_enum_OrderByInput',
+    _A_email_OrderByInput,
+    _A_name_OrderByInput,
+    _A_int_OrderByInput,
+    _A_sInt_OrderByInput,
+    _A_inc_int_OrderByInput,
+    _A_inc_sInt_OrderByInput,
+    _A_bInt_OrderByInput,
+    _A_inc_bInt_OrderByInput,
+    _A_enum_OrderByInput,
 ]
 
 
@@ -11081,8 +11081,8 @@ _BCompoundmy_constraintKey = TypedDict(
 )
 
 BWhereUniqueInput = Union[
-    '_BWhereUnique_id_Input',
-    '_BCompoundmy_constraintKey',
+    _BWhereUnique_id_Input,
+    _BCompoundmy_constraintKey,
 ]
 
 
@@ -11177,11 +11177,11 @@ _B_numFloat_OrderByInput = TypedDict(
 )
 
 BOrderByInput = Union[
-    '_B_id_OrderByInput',
-    '_B_float_OrderByInput',
-    '_B_d_float_OrderByInput',
-    '_B_decFloat_OrderByInput',
-    '_B_numFloat_OrderByInput',
+    _B_id_OrderByInput,
+    _B_float_OrderByInput,
+    _B_d_float_OrderByInput,
+    _B_decFloat_OrderByInput,
+    _B_numFloat_OrderByInput,
 ]
 
 
@@ -12292,12 +12292,12 @@ _C_uuid_OrderByInput = TypedDict(
 )
 
 COrderByInput = Union[
-    '_C_char_OrderByInput',
-    '_C_v_char_OrderByInput',
-    '_C_text_OrderByInput',
-    '_C_bit_OrderByInput',
-    '_C_v_bit_OrderByInput',
-    '_C_uuid_OrderByInput',
+    _C_char_OrderByInput,
+    _C_v_char_OrderByInput,
+    _C_text_OrderByInput,
+    _C_bit_OrderByInput,
+    _C_v_bit_OrderByInput,
+    _C_uuid_OrderByInput,
 ]
 
 
@@ -13401,12 +13401,12 @@ _D_binary_OrderByInput = TypedDict(
 )
 
 DOrderByInput = Union[
-    '_D_id_OrderByInput',
-    '_D_bool_OrderByInput',
-    '_D_xml_OrderByInput',
-    '_D_json__OrderByInput',
-    '_D_jsonb_OrderByInput',
-    '_D_binary_OrderByInput',
+    _D_id_OrderByInput,
+    _D_bool_OrderByInput,
+    _D_xml_OrderByInput,
+    _D_json__OrderByInput,
+    _D_jsonb_OrderByInput,
+    _D_binary_OrderByInput,
 ]
 
 
@@ -14486,10 +14486,10 @@ _E_ts_OrderByInput = TypedDict(
 )
 
 EOrderByInput = Union[
-    '_E_id_OrderByInput',
-    '_E_date_OrderByInput',
-    '_E_time_OrderByInput',
-    '_E_ts_OrderByInput',
+    _E_id_OrderByInput,
+    _E_date_OrderByInput,
+    _E_time_OrderByInput,
+    _E_ts_OrderByInput,
 ]
 
 
